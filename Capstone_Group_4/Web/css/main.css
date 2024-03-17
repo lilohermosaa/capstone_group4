@@ -1,0 +1,44 @@
+.btnPhone-shadow {
+  border-radius: 5px;
+  border: none;
+  background-color: #2a73dd;
+  margin: 20px 0;
+}
+
+.navbar-nav {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .phoneCarousel {
+    padding: 150px 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .phoneCarousel h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .phoneCarousel {
+    padding: 100px 0;
+  }
+}
+.cardPhone__text {
+  display: block;
+}
+
+.section-title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 575.98px) {
+  .products {
+    width: 90%;
+  }
+}
+.option {
+  margin-left: 104.5px;
+  border-radius: 0.25rem;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+.cardPhone__text{
+    display: block;
+}
+
+.section-title{
+    text-align: center;
+    margin: 50px 0;
+}
+
+@include responsive("small-down"){
+    .products{
+        width: 90%;
+    }
+}

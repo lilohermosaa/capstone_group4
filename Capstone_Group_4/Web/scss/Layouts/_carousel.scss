@@ -1,0 +1,20 @@
+
+//responsive
+@include responsive("large-down"){
+    .phoneCarousel{
+        padding: $pd-8 0;
+    } 
+}
+@include responsive("medium-down"){
+    .phoneCarousel{
+        h1{
+            font-size: $fs-8;
+        }
+    } 
+}
+@include responsive("small-down"){
+    .phoneCarousel{
+        padding: $pd-5 0;
+    } 
+}
+
