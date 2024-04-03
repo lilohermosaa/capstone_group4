@@ -41,30 +41,29 @@ const listProduct = result.data;
 function renderUI(data) {
   let content = "";
   data.forEach(function (product) {
-    content += `
-        <div class="col-12 col-md-6 col-lg-4">
-        <div class="card cardPhone">
-          <img src="./image/${product.image}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="cardPhone__title">${product.name}</h3>
-              <span class="cardPhone__text">$${product.price}</span>
-                <span class="cardPhone__text">${product.backCamera}</span>
-                <span class="cardPhone__text">${product.frontCamera}</span>
-                <span class="cardPhone__text">${product.description}</span>
+      content += `
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="card cardPhone">
+                  <img src="./image/${product.image}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                          <div>
+                              <h3 class="cardPhone__title">${product.name}</h3>
+                              <span class="cardPhone__text">$${product.price}</span>
+                              <span class="cardPhone__text">${product.backCamera}</span>
+                              <span class="cardPhone__text">${product.frontCamera}</span>
+                              <span class="cardPhone__text">${product.description}</span>
+                          </div>
+                      </div>
+                      <div class=" justify-content-between">
+                          <div>
+                              <button onclick="addToCart(${product.id}, '${product.name}', ${product.price}, '${product.image}')" class="btnPhone-shadow btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ Hàng</button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class=" justify-content-between">
-              <div>
-                <button onclick="themVaoGioHang(${product.id})" class="btnPhone-shadow btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ Hàng</button>
-              </div>
-            </div>
-  
           </div>
-        </div>
-      </div>
-        `;
+      `;
   });
 
   document.getElementById("products_content_main").innerHTML = content;
